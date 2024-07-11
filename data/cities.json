@@ -1,64 +1,64 @@
 {
   "cities": [
     {
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "\uD83C\uDDF5\uD83C\uDDF9",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
-      "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
-      },
-      "id": 73930385
-    },
-    {
-      "cityName": "Madrid",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2027-07-15T08:22:53.976Z",
-      "notes": "",
-      "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
-      },
-      "id": 17806751
-    },
-    {
-      "cityName": "Berlin",
+      "id": "5fa6",
+      "cityName": "Freudenstadt",
       "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2027-02-12T09:24:11.863Z",
-      "notes": "Amazing 😃",
       "position": {
-        "lat": 52.53586782505711,
-        "lng": 13.376933665713324
+        "lat": "48.44377831058805",
+        "lng": "8.371582031250002"
       },
-      "id": 98443197
+      "date": "2024-07-11T10:11:57.262Z",
+      "notes": "sdasd",
+      "emoji": "🇩🇪"
     },
     {
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "\uD83C\uDDF5\uD83C\uDDF9",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
+      "id": "be77",
+      "cityName": "Lipa",
+      "country": "Czechia",
       "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
+        "lat": "49.55372551347579",
+        "lng": "15.534667968750002"
       },
-      "id": 73440385
+      "date": "2024-07-11T10:18:27.289Z",
+      "notes": "ccc",
+      "emoji": "🇨🇿"
     },
     {
-      "cityName": "Madrid",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2027-07-15T08:22:53.976Z",
-      "notes": "",
+      "id": "edf0",
+      "cityName": "Gora Swietej Malgorzaty",
+      "country": "Poland",
       "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
+        "lat": "52.10650519075632",
+        "lng": "19.379882812500004"
       },
-      "id": 17855751
+      "date": "2024-07-11T10:19:40.948Z",
+      "notes": "ppp",
+      "emoji": "🇵🇱"
+    },
+    {
+      "id": "8568",
+      "cityName": "Slutsk",
+      "country": "Belarus",
+      "position": {
+        "lat": "53.30462107510271",
+        "lng": "27.795410156250004"
+      },
+      "date": "2024-07-11T10:20:03.561Z",
+      "notes": "bbb",
+      "emoji": "🇧🇾"
+    },
+    {
+      "id": "51df",
+      "cityName": "Novy Oskol",
+      "country": "Russian Federation (the)",
+      "position": {
+        "lat": "50.666872321810715",
+        "lng": "37.74902343750001"
+      },
+      "date": "2024-07-11T10:20:27.545Z",
+      "notes": "fff",
+      "emoji": "🇷🇺"
     }
   ]
 }
