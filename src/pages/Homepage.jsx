@@ -18,8 +18,8 @@ export default function Homepage() {
           experiences, and show your friends how you have wandered the world.
         </h2>
       </section>
-      <Link to="app">
-        <Button type="position">Add now</Button>
+      <Link to="/login">
+        <Button type="position">Start Tracking Now</Button>
       </Link>
     </main>
   );
