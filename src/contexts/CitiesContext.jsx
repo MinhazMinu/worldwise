@@ -19,10 +19,15 @@ function reducer(state, action) {
     case 'city/Loaded':
       return { ...state, currentCity: action.payload, isLoading: false };
 
-    case 'cities/created':
-      return { ...state, cities: [...state.cities, action.payload], isLoading: false };
+    case 'city/created':
+      return { ...state, cities: [...state.cities, action.payload], isLoading: false, currentCity: action.payload };
     case 'cities/deleted':
-      return { ...state, cities: state.cities.filter((city) => city.id !== action.payload), isLoading: false };
+      return {
+        ...state,
+        cities: state.cities.filter((city) => city.id !== action.payload),
+        isLoading: false,
+        currentCity: {},
+      };
 
     case 'rejected':
       return { ...state, error: action.payload, isLoading: false };
@@ -37,7 +42,7 @@ function CitiesProvider({ children }) {
   // const [isLoading, setIsLoading] = useState(false);
   // const [currentCity, setCurrentCity] = useState({});
 
-  const [{ cities, isLoading, currentCity }, dispatch] = useReducer(reducer, initialState);
+  const [{ cities, isLoading, currentCity, error }, dispatch] = useReducer(reducer, initialState);
 
   useEffect(function () {
     async function fetchCities() {
@@ -54,6 +59,7 @@ function CitiesProvider({ children }) {
   }, []);
 
   async function getCity(id) {
+    if (Number(id) === currentCity.id) return;
     try {
       dispatch({ type: 'loading' });
       const res = await fetch(`http://localhost:5000/cities/${id}`);
@@ -75,7 +81,7 @@ function CitiesProvider({ children }) {
         },
       });
       const data = await res.json();
-      dispatch({ type: 'cities/created', payload: data });
+      dispatch({ type: 'city/created', payload: data });
     } catch (error) {
       dispatch({ type: 'rejected', payload: 'Error in creating city...' + error.message });
     }
@@ -94,7 +100,7 @@ function CitiesProvider({ children }) {
   }
 
   return (
-    <CitiesContext.Provider value={{ cities, isLoading, currentCity, getCity, createCity, deleteCity }}>
+    <CitiesContext.Provider value={{ cities, isLoading, currentCity, error, getCity, createCity, deleteCity }}>
       {children}
     </CitiesContext.Provider>
   );

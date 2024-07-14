@@ -13,18 +13,6 @@
       "emoji": "🇩🇪"
     },
     {
-      "id": "be77",
-      "cityName": "Lipa",
-      "country": "Czechia",
-      "position": {
-        "lat": "49.55372551347579",
-        "lng": "15.534667968750002"
-      },
-      "date": "2024-07-11T10:18:27.289Z",
-      "notes": "ccc",
-      "emoji": "🇨🇿"
-    },
-    {
       "id": "edf0",
       "cityName": "Gora Swietej Malgorzaty",
       "country": "Poland",
@@ -49,16 +37,16 @@
       "emoji": "🇧🇾"
     },
     {
-      "id": "51df",
-      "cityName": "Novy Oskol",
-      "country": "Russian Federation (the)",
+      "id": "5260",
+      "cityName": "Lajosmizse",
+      "country": "Hungary",
       "position": {
-        "lat": "50.666872321810715",
-        "lng": "37.74902343750001"
+        "lat": "47.010225655683485",
+        "lng": "19.555664062500004"
       },
-      "date": "2024-07-11T10:20:27.545Z",
-      "notes": "fff",
-      "emoji": "🇷🇺"
+      "date": "2024-07-14T07:13:49.101Z",
+      "notes": "Hun",
+      "emoji": "🇭🇺"
     }
   ]
 }
